@@ -1,0 +1,102 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "81faa182-d7ed-4a34-897e-244aa5394997": {
+        "id": "81faa182-d7ed-4a34-897e-244aa5394997",
+        "parent": null,
+        "name": "DebugTest",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "c5ac0396-a3d7-4bdc-9786-aa300960d846"
+        ],
+        "isRemovable": false,
+        "filePath": "DebugTest"
+      },
+      "c5ac0396-a3d7-4bdc-9786-aa300960d846": {
+        "id": "c5ac0396-a3d7-4bdc-9786-aa300960d846",
+        "parent": "81faa182-d7ed-4a34-897e-244aa5394997",
+        "name": "lambda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "DebugTest/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    let a = event;\n    a.name = \"Mike\";\n    console.log(a);\n    callback(null, a);\n}\n\nrequire('aws-lambda-debugger');",
+        "triggers": [],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        }
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "81faa182-d7ed-4a34-897e-244aa5394997",
+    "openFiles": [
+      "c5ac0396-a3d7-4bdc-9786-aa300960d846"
+    ],
+    "currentFileId": "c5ac0396-a3d7-4bdc-9786-aa300960d846",
+    "resources": {},
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      },
+      {
+        "lambdaId": "c5ac0396-a3d7-4bdc-9786-aa300960d846",
+        "varKey": "DEBUGGER_ACTIVE",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": true
+      },
+      {
+        "lambdaId": "c5ac0396-a3d7-4bdc-9786-aa300960d846",
+        "varKey": "DEBUGGER_BROKER_ADDRESS",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": true
+      },
+      {
+        "lambdaId": "all",
+        "varKey": "DEBUGGER_FUNCTION_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": true
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "aws-lambda-debugger": {
+          "name": "aws-lambda-debugger",
+          "version": "1.1.0"
+        }
+      }
+    },
+    "lambdaId": "c5ac0396-a3d7-4bdc-9786-aa300960d846"
+  },
+  "PROJECT_META": {
+    "projectName": "DebugTest",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1547461932244
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "DebugTest",
+      "url": "https://github.com/sigmaidetest/DebugTest"
+    }
+  }
+}
